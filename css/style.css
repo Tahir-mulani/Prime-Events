@@ -1,0 +1,141 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+.nav-item a:hover {
+    color: brown;
+    text-decoration: underline;
+    box-shadow: 0lvi;
+}
+
+.navbar-brand {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    /* font-style: normal; */
+}
+
+.navbar-nav .nav-link {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    /* text-transform: uppercase; */
+}
+
+.navbar-nav .nav-link:hover {
+    color: goldenrod !important;
+}
+
+.navbar {
+    position: sticky;
+    top: 0px;
+}
+
+.dropdown-menu .dropdown-item {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+}
+
+.back-img {
+    background-image: url(../Images/party-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 630px;
+    width: 100%;
+    opacity: 0.8;
+}
+
+.middle-text {
+
+    position: absolute;
+    opacity: 1;
+    top: 50%;
+    left: 410px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: black;
+    animation: up 1s ease forwards;
+
+}
+
+.middle-text h3 {
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: black;
+    animation: up 1.4s ease forwards;
+}
+
+@keyframes up {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+/* Small devices (mobile landscape) */
+@media (max-width: 768px) {
+    .back-img{
+
+        width:100%;
+        position: relative;
+        overflow-x: hidden;
+        height:350px;
+    }
+    .middle-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* width:180px; */
+        width: 100%;
+    }
+    .middle-text h2
+    {
+    position: absolute;
+    overflow-x: hidden;
+    right: 10px;
+   text-align:center;
+   z-index: 10;
+   bottom: 20px;
+   /* width: 100%; */
+   min-width:100px;
+   color:white
+
+    }
+
+  .middle-text h3
+  {
+    position: absolute;
+    overflow-x: hidden;
+    top:50%;
+    right:50%;
+   text-align:center;
+   /* z-index: 10; */
+   /* color: white; */
+   display: none;
+
+    
+    
+  }
+}
+
+/* Extra small devices (mobile portrait) */
+@media (max-width: 576px) {
+
+}
+
+
