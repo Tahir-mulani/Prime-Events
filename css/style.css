@@ -39,7 +39,7 @@
 }
 
 .back-img {
-    background-image: url(../Images/party-image.jpg);
+    background-image: url(../Images/partynew.avif);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -48,12 +48,17 @@
     opacity: 0.8;
 }
 
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
 .middle-text {
 
     position: absolute;
     opacity: 1;
-    top: 50%;
-    left: 410px;
+    top: 40%;
+    left: 429px;
     font-family: 'Oswald', sans-serif;
     font-size: 2.4rem;
     font-weight: 700;
@@ -85,57 +90,131 @@
 }
 
 
-
-
-/* Small devices (mobile landscape) */
 @media (max-width: 768px) {
-    .back-img{
+    .back-img {
 
-        width:100%;
+        width: 100%;
         position: relative;
         overflow-x: hidden;
-        height:350px;
+        height: 350px;
     }
-    .middle-text{
+
+    .middle-text {
         display: flex;
         flex-direction: column;
         align-items: center;
         /* width:180px; */
         width: 100%;
     }
-    .middle-text h2
-    {
-    position: absolute;
-    overflow-x: hidden;
-    right: 10px;
-   text-align:center;
-   z-index: 10;
-   bottom: 20px;
-   /* width: 100%; */
-   min-width:100px;
-   color:white
 
+    .middle-text h2 {
+        position: absolute;
+        overflow-x: hidden;
+        right: 10px;
+        text-align: center;
+        z-index: 10;
+        bottom: 20px;
+        /* width: 100%; */
+        min-width: 100px;
+        color: white
     }
 
-  .middle-text h3
-  {
+    .middle-text h3 {
+        position: absolute;
+        overflow-x: hidden;
+        top: 50%;
+        right: 50%;
+        text-align: center;
+        /* z-index: 10; */
+        /* color: white; */
+        display: none;
+    }
+}
+
+.service-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.service-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+
+.service-card::before {
+    content: "";
     position: absolute;
-    overflow-x: hidden;
-    top:50%;
-    right:50%;
-   text-align:center;
-   /* z-index: 10; */
-   /* color: white; */
-   display: none;
-
-    
-    
-  }
-}
-
-/* Extra small devices (mobile portrait) */
-@media (max-width: 576px) {
-
+    inset: 0;
+    /* margin:10px */
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 1;
 }
 
 
+.overlay {
+    position:absolute;
+    bottom:20px;
+    left:20px;
+    color: #fff;
+    z-index: 2;
+}
+
+.overlay h5 {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.overlay p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.service-card:hover img {
+    transform: scale(1.1);
+}
+
+.city-presence h2 {
+    margin-top: 40px;
+    font-size: 28px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.heading h2 {
+    font-size: 34px;
+    letter-spacing: 1px;
+    margin-top: 8px;
+}
+
+.heading h4 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #6c757d;
+}
+
+@media (max-width: 768px) {
+    .heading h2 {
+        font-size: 28px;
+    }
+
+    .heading h4 {
+        font-size: 16px;
+    }
+
+    .city-presence h2 {
+        font-size: 24px;
+    }
+
+    .city-presence img {
+        max-height: 280px;
+    }
+
+    .heading {
+        text-align: center;
+    }
+}

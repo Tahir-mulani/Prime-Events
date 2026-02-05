@@ -4,10 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PrimeEvent</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
 
     <link rel="stylesheet" href="./css/style.css">
 
@@ -17,12 +16,12 @@
     <div class="container-fluid p-0">
         <div class="row">
             <div class="col-md-12">
-                <nav class="navbar oswald-font navbar-expand-lg sticky-top d-flex bg-secondary ">
-                    <img src="./Images/logo1.png" class="text-danger logo-glow"
-                        style="width: 90px; height:90px; border-radius:3px ;color:rgb(195, 18, 18); "
+                <nav class="navbar oswald-font navbar-expand-lg sticky-top shadow bg-secondary ">
+                    <img src="./Images/logo1.png" class="text-danger logo-glow text-black  "
+                        style="width: 90px; height:70px; border-radius:3px ;color:rgb(195, 18, 18); "
                         class="rounded-circle text-center ms-m-5">
                     <div class="container-fluid ">
-                        <a class="navbar-brand fs-md-4 text-dark fw-bolder" href="#">PrimeEvents</a>
+                        <a class="navbar-brand fs-md-4 text-dark fw-bolder logo" href="#">PrimeEvents</a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -32,11 +31,11 @@
                             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ms-md-auto d-flex">
                                 <li class="nav-item">
                                     <a class="nav-link active fw-bolder me-md-3 text-white fs-md-4  oswald-font"
-                                        aria-current="page" href="#">Home</a>
+                                        aria-current="page" href="./index.html">Home</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link active fw-bolder me-md-3 text-white  oswald-font"
-                                        aria-current="page" href="#">About</a>
+                                        aria-current="page" href="./about.html">About</a>
                                 </li>
 
                                 <li class="nav-item dropdown">
@@ -56,11 +55,11 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link fw-bolder me-md-3 text-white newli" href="#">Gallery</a>
+                                    <a class="nav-link fw-bolder me-md-3 text-white newli" href="./gallery.html">Gallery</a>
                                 </li>
                                 <li>
-                                    <button type="button" class="btn btn-primary fw-bolder rounded text-white">Book
-                                        Events</button>
+                                    <button type="button align-items-md-center" class="btn btn-outline-light">Book
+                                        Event</button>
                                 </li>
                             </ul>
                         </div>
@@ -74,94 +73,181 @@
                 <div class="back-img">
                     <div class="middle-text">
                         <span>
-                            <h2>Get the best deals Always within a Budget</h2>
+                            <h2>Get the best deals<span class="text-warning "> Always within a Budget</span></h2>
                         </span>
                         <span>
                             <h3>Search, book with confidence, and relax while we handle the rest..Enjoy!</h3>
                         </span>
+                        <div class="buttons d-flex g-4 justify-content-center">
+                            <button type="button"
+                                class="btn btn-outline-warning bg-dark text-center text-warning m-">register</button>
+                            <button type="button"
+                                class="btn btn-outline-dark text-warning ms-md-1 w-25 fs-md-5 fw-bolder">Login</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- 2nd section  -->
-        <div class="container my-5">
+        <section class="">
+            <div class="row">
+                <div class="col-12 text-dark d-flex flex-column align-items-md-center heading">
+                    <h2 class="fw-bold text-dark" >EventKeepers Services</h2>
+                    <h4 class="text-muted">Effortless Event Booking Made Simple</h4>
+                </div>
+            </div>
+            <div class="container py-2">
+                <div class="row g-4">
+
+                    <!-- Card 1 -->
+                    <div class="col-md-4">
+                        <div class="service-card shadow">
+                            <img src="./Images/corporateEvent.png" style="height: 260px; object-fit: cover;"
+                                class="img-fluid" alt="">
+                            <div class="overlay">
+                                <h5>Corporate Event</h5>
+                                <p>Creating unforgettable events</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-md-4">
+                        <div class="service-card shadow">
+                            <img src="./Images/catering.jpg" class="img-fluid" style="height: 260px; object-fit: cover;"
+                                alt="">
+                            <div class="overlay">
+                                <!-- <h5>Campus Carnival</h5> -->
+                                <h5>Royal Kitchen</h5>
+                                <p>A Taste Fit for Royalty</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-md-4">
+                        <div class="service-card shadow">
+                            <img src="./Images/flowerDecoration.jpg" class="img-fluid"
+                                style="height: 260px; width:100%;  object-fit: cover;" alt="">
+                            <div class="overlay">
+                                <h5>Floral Decoration</h5>
+                                <p>Flowers Create Magic</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="service-card shadow">
+                            <img src="./Images/weddinggroom.jpg" class="img-fluid"
+                                style="height: 260px; width:100%;  object-fit: cover;" alt="">
+                            <div class="overlay">
+                                <h5 class="text-bolder">Photographers</h5>
+                                <p>Flowers Create Magic</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="service-card shadow">
+                            <img src="./Images/mehandi.webp" class="img-fluid"
+                                style="height: 260px; width:100%;  object-fit: cover;" alt="">
+                            <div class="overlay">
+                                <h5 class="text-bolder">Mehandi</h5>
+                                <p>Sangeet & Mehendi Setup</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="service-card shadow">
+                            <img src="./Images/Invitationmobile.jpg" class="img-fluid"
+                                style="height: 260px; width:100%;  object-fit: cover;" alt="">
+                            <div class="overlay">
+                                <h5 class="text-bolder">Invitations</h5>
+                                <p>Digital invitations (WhatsApp / Email)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <div class="container-fluid my-2 mt-lg-4">
             <div class="row g-4 align-items-stretch">
 
                 <!-- left section -->
-                <div class="col-lg-6 col-md-12">
-                    <div class="border h-100 p-5 d-flex flex-column justify-content-center">
+                <div class="col-lg-6 col-md-12 city-presence">
+                    <div class="border  p-5 d-flex flex-column justify-content-center">
                         <h2 class="fw-bold text-center">OUR CITY PRESENCE</h2>
                         <p class="fw-semibold text-center">15 Countries & 195 Cities</p>
                         <img src="./Images/map.png" alt="">
                     </div>
                 </div>
 
-                <!-- right SectioN-->
+                <!-- right sectio-->
                 <div class="col-lg-6 col-md-12">
-                    <div class="row g-3 h-50">
+                    <div class="row g-3">
 
-                        <!-- CARD 1 -->
+                       
                         <div class="col-lg-6 shadow">
-                            <div class="card h-50 text-center">
-                                <img src="./Images/mumbai.webp" style="height: 280px; " class="img-fluid"
-                                    alt="">
+                            <div class="card  text-center">
+                                <img src="./Images/china.png"
+                                    style="height: 250px; font-family: Oswald, sans-serif; object-fit: cover;" ;
+                                    class="img-fluid" alt="">
                                 <div class="card-body">
-                                    <h6 class="fw-bold text-center">Mumbai</h6>
+                                    <h6 class="fw-bold text-center">China</h6>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- CARD 2 -->
+                        
                         <div class="col-lg-6 shadow">
-                            <div class="card h-50 text-center shadow">
-                                <img src="./Images/mumbai.webp" class="image-fluid" style="height: 280px;" class="sticky-top rounded-top"
+                            <div class="card text-center shadow">
+                                <img src="./Images/Delhi.png" class="image-fluid" style="height: 250px;"
+                                    style="font-family: Oswald, sans-serif" ; class="sticky-top rounded-top" alt="">
+                                <div class="card-body" style="font-family: Oswald, sans-serif; object-fit: cover;" ;>
+                                    <h6 class="fw-bold text-center">Delhi</h6>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        
+                        <div class="col-lg-6 mt-lg-4 shadow">
+                            <div class="card ">
+                                <img src="./Images/pune.png" style="height: 250px; " class="img-fluid rounded-top"
                                     alt="">
-                                <div class="card-body">
+                                <div class="card-body"
+                                    style="font-family: Oswald, sans-serif; object-fit: cover;" ;>
+                                    <h6 class="fw-bold text-center">Pune</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 mt-lg-4 shadow">
+                            <div class="card">
+                                <img src="./Images/mumbainew.jpg" style="height: 250px; " class="img-fluid rounded-top"
+                                    alt="">
+                                <div class="card-body"
+                                    style="font-family: Oswald, sans-serif;";>
                                     <h6 class="fw-bold text-center">Mumbai</h6>
                                 </div>
                             </div>
                         </div>
-                    
-
-                    <!-- CARD 3 -->
-                    <div class="col-lg-6 mt-lg-4 shadow">
-                        <div class="card h-50">
-                            <img src="./Images/mumbai.webp" style="height: 280px; " class="img-fluid rounded-top"
-                                alt="">
-                            <div class="card-body">
-                                <h6 class="fw-bold text-center">Mumbai</h6>
-                            </div>
-                        </div>
                     </div>
 
-                    <div class="col-lg-6 mt-lg-4 shadow">
-                        <div class="card h-50">
-                            <img src="./Images/mumbai.webp" style="height: 280px;" class="img-fluid rounded-top" alt="">
-                            <div class="card-body">
-                                <h6 class="fw-bold text-center">Mumbai</h6>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
+                   
 
-                    <!-- CARD 4 -->
-                    
                 </div>
 
             </div>
         </div>
 
-        <!-- RIGHT TALL ROUNDED CARD -->
-        <div class="col-lg-2 d-none d-lg-block">
-            <div class="card h-100 rounded-pill">
-                
-            </div>
-        </div>
-
     </div>
     </div>
-
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
