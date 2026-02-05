@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Events | Galley</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .gal-img {
+            height: 250px;
+            width: 270px;
+            box-shadow: 0 0 18px rgba(212, 168, 26, 0.7);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .gal-img:hover {
+            cursor: pointer;
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        body {
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- header section -->
+        <div class="row">
+            <div class="col-md-12 p-0">
+                <nav class="navbar oswald-font navbar-expand-lg sticky-top d-flex bg-secondary ">
+                    <img src="./Images/logo1.png" class="text-danger logo-glow"
+                        style="width: 90px; height:90px; border-radius:3px ;color:rgb(195, 18, 18); "
+                        class="rounded-circle text-center ms-m-5">
+                    <div class="container-fluid ">
+                        <a class="navbar-brand fs-md-4 text-dark fw-bolder" href="#">PrimeEvents</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ms-md-auto d-flex">
+                                <li class="nav-item">
+                                    <a class="nav-link active fw-bolder me-md-3 text-white fs-md-4  oswald-font"
+                                        aria-current="page" href="/index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active fw-bolder me-md-3 text-white  oswald-font"
+                                        aria-current="page" href="/about.html">About</a>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle fw-bolder me-md-3 text-white  oswald-font"
+                                        href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Venue
+                                    </a>
+                                    <ul class="dropdown-menu ">
+                                        <li><a class="dropdown-item fw-bolder me-3 newli" href="#">Pune</a></li>
+                                        <li><a class="dropdown-item fw-bolder me-md-3 text-dark  newli"
+                                                href="#">Mumbai</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item fw-bolder me-md-3 text-dark  newli"
+                                                href="#">Delhi</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link fw-bolder me-md-3 text-white newli"
+                                        href="/gallery.html">Gallery</a>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-primary fw-bolder rounded text-white">Book
+                                        Events</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+        </div>
+
+        <!-- gallery section -->
+        <section>
+            <h1 class="fw-bold text-center mt-2 text-info-emphasis">Explore Our Event Venues</h1>
+            <p class="text-center text-info-emphasis">Beautiful Locations for Every Celebration</p>
+            <hr class="text-success border-4  ">
+            <div class="row  p-3 mt-2 justify-content-center align-items-center">
+                <div class="col-lg-3 col-md-12  p-2 ">
+                    <img src="/Images/gallery-1.avif" class="img-thumbnail gal-img d-block mx-auto" alt="...">
+                </div>
+                <div class="col-lg-3 col-md-12  p-2 ">
+                    <img src="/Images/gallery-2.avif" class="img-thumbnail gal-img d-block mx-auto" alt="...">
+                </div>
+                <div class="col-lg-3 col-md-12  p-2 ">
+                    <img src="/Images/gallery-3.avif" class="img-thumbnail gal-img d-block mx-auto" alt="...">
+                </div>
+                <div class="col-lg-3 col-md-12  p-2 ">
+                    <img src="/Images/gallery-4.avif" class="img-thumbnail gal-img d-block mx-auto" alt="...">
+                </div>
+                <div class="col-lg-3 col-md-12  p-2 ">
+                    <img src="/Images/gallery-5.avif" class="img-thumbnail gal-img d-block mx-auto" alt="...">
+                </div>
+                <div class="col-lg-3 col-md-12  p-2 ">
+                    <img src="/Images/gallery-6.avif" class="img-thumbnail gal-img d-block mx-auto" alt="...">
+                </div>
+                <div class="col-lg-3 col-md-12  p-2 ">
+                    <img src="/Images/gallery-7.avif" class="img-thumbnail gal-img d-block mx-auto" alt="...">
+                </div>
+                <div class="col-lg-3 col-md-12  p-2 ">
+                    <img src="/Images/gallery-8.avif" class="img-thumbnail gal-img d-block mx-auto"alt="...">
+                </div>
+            </div>
+        </section>
+        <!-- Our Teams -->
+        <section>
+            <h1 class="text-center mt-2 fw-bold text-info-emphasis">Our Teams</h1>
+            <p class="text-center text-info-emphasis ">A passionate group of event planners and professionals dedicated to creating
+                memorable celebrations with precision, creativity, and care.</p>
+               <hr class="text-success border-4">
+            <div class="row">
+                <div class="col-12 align-items-center shadow">
+                    <img src="/Images/our teams.jpg"  class="img-thumbnail p-2" alt="our team">
+                </div>
+            </div>
+        </section>
+        <!-- Footer section -->
+        <!-- Boostrap JS bundle CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    </div>
+</body>
+
+</html>
