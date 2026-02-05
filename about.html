@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="./css/style.css">
     <title>Prime Events | About Us</title>
     <style>
         body {
@@ -18,10 +18,11 @@
         .card-hover {
             transition: transform 0.3s, box-shadow 0.3s;
             cursor: pointer;
+             
         }
 
         .card-hover:hover {
-            transform: translateY(-11px);
+            transform: translateY(-9px);
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
         }
     </style>
@@ -29,13 +30,13 @@
 
 <body>
 
-    <div class="container-fluid">
+    <div class="container-fluid p-0">
         <!-- header section -->
-        <div class="row">
+        <div class="row mx-0">
             <div class="col-md-12">
                 <nav class="navbar oswald-font navbar-expand-lg sticky-top shadow bg-secondary ">
-                    <img src="./Images/logo1.png" class="text-danger logo-glow text-black  "
-                        style="width: 90px; height:70px; border-radius:3px ;color:rgb(195, 18, 18); "
+                    <img src="./Images/logo1.png" class="img-fluid me-2  "
+                        style="width: 70px; height:auto; border-radius:3px ;color:rgb(195, 18, 18); "
                         class="rounded-circle text-center ms-m-5">
                     <div class="container-fluid ">
                         <a class="navbar-brand fs-md-4 text-dark fw-bolder logo" href="#">PrimeEvents</a>
@@ -72,7 +73,8 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link fw-bolder me-md-3 text-white newli" href="./gallery.html">Gallery</a>
+                                    <a class="nav-link fw-bolder me-md-3 text-white newli"
+                                        href="./gallery.html">Gallery</a>
                                 </li>
                                 <li>
                                     <button type="button align-items-md-center" class="btn btn-outline-light">Book
@@ -86,40 +88,120 @@
 
         </div>
         <!-- About section -->
-        <section class="p-3 mt-2">
-            <h3 class="fw-bold text-center mt-2 mb-2 text-info-emphasis text-decoration-underline">About Us</h3>
+        <section class="p-4 mt-3 bg-light">
+            <div class="container">
+                <h3 class="fw-bold text-center  mb-4 text-info-emphasis text-decoration-underline">About Us</h3>
 
-            <div class="row g-4 align-items-center">
-                <div class="col-lg-6 col-md-6 opacity-100">
-                    <div class="shadow p-2 rounded">
-                        <img src="/Images/about.jpg" class="img-fluid rounded mx-auto d-block" alt="About Us Image">
+                <div class="row g-4 align-items-center mx-0">
+                    
+                    <div class="col-lg-6 col-md-12">
+                        <div class="shadow overflow-hidden rounded">
+                            <img src="./Images/about.jpg" class="img-fluid w-100" alt="About Prime Events">
+                        </div>
                     </div>
+                     
+                    <div class="col-lg-6 col-md-12">
+                        <div class="shadow p-4 rounded  bg-white h-100">
+                            <h5 class="fw-semibold text-primary mb-3">
+                                Creating Memorable Events with Passion & Precision
+                            </h5>
+                            <p class="text-center text-secondary mb-0">At PrimeEvents, we believe every event is a
+                                story
+                                waiting
+                                to be told.
+                                With creativity, precision, and passion, we plan and manage events that leave lasting
+                                impressions. From
+                                intimate gatherings to grand celebrations, our team ensures every detail is handled with
+                                care,
+                                so you
+                                can relax and enjoy your special moments.</p>
 
-                </div>
-
-                <div class="col-lg-6 col-md-12">
-                    <div class="shadow p-3 rounded d-flex align-items-center h-100">
-                        <p class="text-center text-info-emphasis m-0">At PrimeEvents, we believe every event is a story
-                            waiting
-                            to be told.
-                            With creativity, precision, and passion, we plan and manage events that leave lasting
-                            impressions. From
-                            intimate gatherings to grand celebrations, our team ensures every detail is handled with
-                            care,
-                            so you
-                            can relax and enjoy your special moments.</p>
+                        </div>
 
                     </div>
-
                 </div>
             </div>
         </section>
 
         <!-- Why choose us -->
-        <section>
-            <h3 class="fw-bold text-center  text-info-emphasis text-decoration-underline">Why Choose US</h3>
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-6 col-sm-12 mt-2">
+        <h3 class="fw-bold text-center  text-info-emphasis text-decoration-underline">Why Choose US</h3>
+        <div class="row justify-content-center mx-0">
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-2">
+                <div class="card p-3 card-hover shadow text-center h-100 ">
+                    <div class="card-body">
+                        <i class="bi bi-people-fill fs-1 text-primary"></i>
+                        <h5 class="card-title mt-2">Experienced Team</h5>
+                        <p class="card-text">Our skilled event planners bring experience, creativity, and
+                            professionalism to manage every detail with precision.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-2">
+                <div class="card p-3 card-hover shadow text-center h-100">
+                    <div class="card-body">
+                        <i class="bi bi-lightbulb-fill fs-1 text-primary"></i>
+                        <h5 class="card-title mt-2">Creative & Customized Planning</h5>
+                        <p class="card-text">We design personalized themes and event concepts tailored to your
+                            vision, style, and budget.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-2">
+                <div class="card p-3 card-hover shadow text-center h-100">
+                    <div class="card-body">
+                        <i class="bi bi-clock-fill fs-1 text-primary"></i>
+                        <h5 class="card-title mt-2">Perfect Time Management</h5>
+                        <p class="card-text">We follow a well-structured timeline to ensure smooth coordination and
+                            on-time event execution.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-2">
+                <div class="card p-3 card-hover shadow text-center h-100">
+                    <div class="card-body">
+                        <i class="bi bi-currency-rupee fs-1 text-primary"></i>
+                        <h5 class="card-title mt-2">Transparent & Affordable Pricing</h5>
+                        <p class="card-text">Clear pricing with no hidden costs, offering the best value for your
+                            budget.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-2">
+                <div class="card p-3 card-hover shadow text-center h-100">
+                    <div class="card-body">
+                        <i class="bi bi-headset fs-1 text-primary"></i>
+                        <h5 class="card-title mt-2">Dedicated Support</h5>
+                        <p class="card-text">From planning to execution, our team provides continuous support and
+                            guidance at every step.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-2">
+                <div class="card p-3 card-hover shadow text-center h-100">
+                    <div class="card-body">
+                        <i class="bi bi-shield-check fs-1 text-primary"></i>
+                        <h5 class="card-title mt-2">Trusted for All Events</h5>
+                        <p class="card-text">Weddings, birthdays, corporate events, or celebrations — we are a
+                            reliable partner for every occasion.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <!-- <section>
+            <h3 class="fw-bold text-center  text-info-emphasis text-decoration-underline mt-3">Why Choose US</h3>
+            <p class="text-center text-info-emphasis">
+                Because your celebration deserves the best planning
+            </p>
+            <hr class="text-success border-5  ">
+            <div class="row justify-content-center p-2">
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
                     <div class="card p-3 card-hover shadow text-center h-100">
                         <div class="card-body">
                             <i class="bi bi-people-fill fs-1 text-primary"></i>
@@ -130,7 +212,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 mt-2">
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
                     <div class="card p-3 card-hover shadow text-center h-100">
                         <div class="card-body">
                             <i class="bi bi-lightbulb-fill fs-1 text-primary"></i>
@@ -141,7 +223,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 mt-2">
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
                     <div class="card p-3 card-hover shadow text-center h-100">
                         <div class="card-body">
                             <i class="bi bi-clock-fill fs-1 text-primary"></i>
@@ -152,7 +234,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 mt-2">
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
                     <div class="card p-3 card-hover shadow text-center h-100">
                         <div class="card-body">
                             <i class="bi bi-currency-rupee fs-1 text-primary"></i>
@@ -163,7 +245,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 mt-2">
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
                     <div class="card p-3 card-hover shadow text-center h-100">
                         <div class="card-body">
                             <i class="bi bi-headset fs-1 text-primary"></i>
@@ -174,7 +256,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 mt-2">
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
                     <div class="card p-3 card-hover shadow text-center h-100">
                         <div class="card-body">
                             <i class="bi bi-shield-check fs-1 text-primary"></i>
@@ -186,10 +268,9 @@
                     </div>
                 </div>
             </div>
-        </section>
-
+        </section> -->
         <!-- Our Events -->
-       
+
         <!-- Footer section -->
         <!-- Boostrap JS bundle CDN -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>

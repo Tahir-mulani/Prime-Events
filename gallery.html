@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prime Events | Galley</title>
+    <title>Prime Events | Gallery</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="./css/style.css">
     <style>
+        
         .gal-img {
             height: 250px;
             width: 270px;
@@ -24,14 +26,20 @@
             scroll-behavior: smooth;
             overflow-x: hidden;
         }
+        .card-img-top{
+            height: 220px;
+            
+            object-fit: cover;
+        }
+
     </style>
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid p-0">
         <!-- header section -->
-        <div class="row">
-            <div class="col-md-12">
+        <div class="row ">
+            <div class="col-md-12 ">
                 <nav class="navbar oswald-font navbar-expand-lg sticky-top shadow bg-secondary ">
                     <img src="./Images/logo1.png" class="text-danger logo-glow text-black  "
                         style="width: 90px; height:70px; border-radius:3px ;color:rgb(195, 18, 18); "
@@ -71,7 +79,8 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link fw-bolder me-md-3 text-white newli" href="./gallery.html">Gallery</a>
+                                    <a class="nav-link fw-bolder me-md-3 text-white newli"
+                                        href="./gallery.html">Gallery</a>
                                 </li>
                                 <li>
                                     <button type="button align-items-md-center" class="btn btn-outline-light">Book
@@ -85,50 +94,90 @@
 
         </div>
 
+
         <!-- gallery section -->
         <section>
-            <h1 class="fw-bold text-center mt-2 text-info-emphasis">Explore Our Event Venues</h1>
-            <p class="text-center text-info-emphasis">Beautiful Locations for Every Celebration</p>
-            <hr class="text-success border-4  ">
-            <div class="row  p-3 mt-2 justify-content-center align-items-center">
-                <div class="col-lg-3 col-md-12  p-2 ">
-                    <img src="/Images/gallery-1.avif" class="img-thumbnail gal-img d-block mx-auto" alt="...">
+            <h1 class="fw-bold text-center mt-2 text-info-emphasis">Events We
+                Manage</h1>
+            <p class="text-center text-info-emphasis">We provide complete event planning and management services for a
+                wide range of occasions</p>
+            <hr class="text-success border-3 w-75 mx-auto ">
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
+                    <div class="card shadow h-100">
+                        <img src="./Images/gallery-wedding.webp" class="card-img-top" alt="Wedding">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Wedding</h5>
+                            <p class="card-text">Beautifully planned weddings with elegant décor and seamless
+                                coordination.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-3 col-md-12  p-2 ">
-                    <img src="/Images/gallery-2.avif" class="img-thumbnail gal-img d-block mx-auto" alt="...">
+                <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
+                    <div class="card shadow h-100">
+                        <img src="./Images/gallery-birthday.webp" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Birthday</h5>
+                            <p class="card-text">Joyful birthday celebrations with creative themes and decorations.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-3 col-md-12  p-2 ">
-                    <img src="/Images/gallery-3.avif" class="img-thumbnail gal-img d-block mx-auto" alt="...">
+                <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
+                    <div class="card shadow h-100">
+                        <img src="./Images/gallery-corporate.jpg" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Corporate</h5>
+                            <p class="card-text">Professional corporate events with smooth execution and branding.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-3 col-md-12  p-2 ">
-                    <img src="/Images/gallery-4.avif" class="img-thumbnail gal-img d-block mx-auto" alt="...">
+                <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
+                    <div class="card shadow h-100">
+                        <img src="./Images/gallery-product_launch.webp" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Product Launch</h5>
+                            <p class="card-text">Impactful product launches that engage and impress your audience.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-3 col-md-12  p-2 ">
-                    <img src="/Images/gallery-5.avif" class="img-thumbnail gal-img d-block mx-auto" alt="...">
+                <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
+                    <div class="card shadow h-100">
+                        <img src="./Images/college_cultural_Event.jpg" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Cultural</h5>
+                            <p class="card-text">Vibrant cultural and community events with traditional charm.</p>
+
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-3 col-md-12  p-2 ">
-                    <img src="/Images/gallery-6.avif" class="img-thumbnail gal-img d-block mx-auto" alt="...">
-                </div>
-                <div class="col-lg-3 col-md-12  p-2 ">
-                    <img src="/Images/gallery-7.avif" class="img-thumbnail gal-img d-block mx-auto" alt="...">
-                </div>
-                <div class="col-lg-3 col-md-12  p-2 ">
-                    <img src="/Images/gallery-8.avif" class="img-thumbnail gal-img d-block mx-auto"alt="...">
+                <div class="col-lg-4 col-md-6 col-12 d-flex justify-content-center">
+                    <div class="card shadow h-100">
+                        <img src="./Images/exhibition.avif" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Exhibitions</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk
+                                of the card’s content.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+
         <!-- Our Teams -->
         <section>
             <h1 class="text-center mt-2 fw-bold text-info-emphasis">Our Teams</h1>
-            <p class="text-center text-info-emphasis ">A passionate group of event planners and professionals dedicated to creating
+            <p class="text-center text-info-emphasis ">A passionate group of event planners and professionals dedicated
+                to creating
                 memorable celebrations with precision, creativity, and care.</p>
-               <hr class="text-success border-4">
+            <hr class="text-success border-4">
             <div class="row">
                 <div class="col-12 align-items-center shadow">
-                    <img src="/Images/our teams.jpg"  class="img-thumbnail p-2" alt="our team">
+                    <img src="/PrimeEvents/Images/our teams.jpg" class="img-thumbnail p-2" alt="our team">
                 </div>
             </div>
         </section>
+
         <!-- Footer section -->
         <!-- Boostrap JS bundle CDN -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
